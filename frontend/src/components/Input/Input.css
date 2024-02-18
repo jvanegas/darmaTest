@@ -1,0 +1,15 @@
+.darmaInput {
+  width: auto;
+  padding: 10px 20px;
+  margin: 10px 10px 20px 10px;
+  border-bottom: 1px solid #9E9E9E;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: #454545;
+  color: white;
+}
+
+.darmaInput::placeholder {
+  color: #9E9E9E;
+}
