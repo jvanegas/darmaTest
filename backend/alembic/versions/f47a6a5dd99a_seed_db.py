@@ -22,11 +22,12 @@ def upgrade() -> None:
   # Create users
   op.execute(
     """
-      INSERT INTO auth.users (id, username, password, name, last_name)
+      INSERT INTO auth.users (id, username, password, name, last_name, email)
       VALUES 
-      (1, 'darma', 'pass1234', 'Darma', 'AI'),
-      (2, 'alice.thomson', 'pass1234', 'Alice', 'Thomson'),
-      (3, 'bob.power', 'pass1234', 'Bob', 'Power');
+      (1, 'darma', 'pass1234', 'Darma', 'AI', 'darma@test.com'),
+      (2, 'alice.thomson', 'pass1234', 'Alice', 'Thomson', 'alice@test.com'),
+      (3, 'bob.power', 'pass1234', 'Bob', 'Power', 'bob@test.com'),
+      (4, 'other.user', 'pass1234', 'Other', 'User', 'other@test.com');
     """
   )
 

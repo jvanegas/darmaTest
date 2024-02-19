@@ -1,5 +1,4 @@
-from pydantic import BaseModel, ConfigDict, Field
-import datetime
+from pydantic import BaseModel, ConfigDict
 
 class UserBase(BaseModel):
   username: str

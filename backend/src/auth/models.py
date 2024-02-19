@@ -11,8 +11,9 @@ class User(Base):
   password = Column(String)
   name = Column(String)
   last_name = Column(String)
-  createdAt_created = Column(DateTime, default=datetime.datetime.utcnow)
-  updatedAt_updated = Column(DateTime, default=datetime.datetime.utcnow)
+  email = Column(String)
+  created_at = Column(DateTime, default=datetime.datetime.utcnow)
+  updated_at = Column(DateTime, default=datetime.datetime.utcnow)
 
 class AccessToken(Base):
   __tablename__ = "access_tokens"
@@ -20,5 +21,5 @@ class AccessToken(Base):
 
   access_token = Column(String, primary_key=True)
   user_id = Column(Integer, index=True)
-  createdAt_created = Column(DateTime, default=datetime.datetime.utcnow)
-  updatedAt_updated = Column(DateTime, default=datetime.datetime.utcnow)
+  created_at = Column(DateTime, default=datetime.datetime.utcnow)
+  updated_at = Column(DateTime, default=datetime.datetime.utcnow)

@@ -35,6 +35,7 @@ def upgrade() -> None:
       password VARCHAR,
       name VARCHAR,
       last_name VARCHAR,
+      email VARCHAR,
       created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP,
       updated_at TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP
     );
