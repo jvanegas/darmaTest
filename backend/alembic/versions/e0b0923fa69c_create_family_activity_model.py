@@ -86,6 +86,7 @@ def upgrade() -> None:
     CREATE TABLE activity.activities (
       id SERIAL PRIMARY KEY,
       child_id INTEGER,
+      family_id INTEGER,
       activity_name VARCHAR,
       activity_weekday INTEGER,
       activity_start_time TIME WITH TIME ZONE,

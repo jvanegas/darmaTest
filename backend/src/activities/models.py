@@ -8,6 +8,7 @@ class Activity(Base):
 
   id = Column(Integer, primary_key=True, index=True)
   child_id = Column(Integer)
+  family_id = Column(Integer)
   activity_name = Column(String)
   activity_weekday = Column(Integer)
   activity_start_time = Column(Time)

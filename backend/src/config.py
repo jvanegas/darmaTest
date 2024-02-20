@@ -13,8 +13,8 @@ config = {
   "DATABASE_DB": os.getenv("DATABASE_DB"),
   "DATABASE_PORT": os.getenv("DATABASE_PORT"),
   "DATABASE_HOST": os.getenv("DATABASE_HOST"),
+  "REDIS_HOST": os.getenv("REDIS_HOST"),
   "REDIS_PORT": os.getenv("REDIS_PORT"),
-  "INTERNAL_REDIS_PORT": os.getenv("INTERNAL_REDIS_PORT"),
   "DEBUG": os.getenv("DEBUG"),
   "LOG_LEVEL": os.getenv("LOG_LEVEL"),
   "JWT_SECRET_KEY": os.getenv("JWT_SECRET_KEY")
